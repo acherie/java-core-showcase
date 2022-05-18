@@ -60,7 +60,7 @@ public class Stock extends Response {
         private String goods_id;
         private String goods_name;
         private String weight_avb;
-        private String weight_unit = "∂÷";
+        private String weight_unit = "Âê®";
 
         public StockBuilder setGoods_id(String goods_id) {
             this.goods_id = goods_id;

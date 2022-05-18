@@ -37,11 +37,11 @@ public class Response implements Serializable {
                 Method setMethod = builderCls.getDeclaredMethod(methodName, fieldDeclaringClass);
                 setMethod.invoke(this, parse(data.get(fieldName), fieldDeclaringClass));
             } catch (NoSuchMethodException e) {
-                System.out.println("ÉèÖÃ MapBuilder µÄÖµÊ§°Ü£¬Ã»ÓĞ¸Ã·½·¨");
+                System.out.println("è®¾ç½® MapBuilder çš„å€¼å¤±è´¥ï¼Œæ²¡æœ‰è¯¥æ–¹æ³•");
             } catch (IllegalAccessException e) {
-                System.out.println("ÉèÖÃ MapBuilder µÄÖµÊ§°Ü£¬È¨ÏŞ·ÃÎÊÊ§°Ü");
+                System.out.println("è®¾ç½® MapBuilder çš„å€¼å¤±è´¥ï¼Œæƒé™è®¿é—®å¤±è´¥");
             } catch (InvocationTargetException e) {
-                System.out.println("ÉèÖÃ MapBuilder µÄÖµÊ§°Ü£¬Ä¿±êµ÷ÓÃÊ§°Ü");
+                System.out.println("è®¾ç½® MapBuilder çš„å€¼å¤±è´¥ï¼Œç›®æ ‡è°ƒç”¨å¤±è´¥");
             }
         }
 
